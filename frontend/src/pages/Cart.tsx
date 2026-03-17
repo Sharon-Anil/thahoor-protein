@@ -1,4 +1,4 @@
-import { Trash2, MessageCircle } from 'lucide-react';
+import { Trash2 } from 'lucide-react';
 import { useCartStore } from '../store/cartStore';
 import { Link } from 'react-router-dom';
 import { useUserStore } from '../store/userStore';
@@ -150,11 +150,11 @@ export function Cart() {
 
                     <button
                         onClick={handleCheckout}
-                        className="w-full max-w-sm py-3 bg-green-600 text-white rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-green-700 transition-all shadow-lg hover:shadow-xl"
+                        className="w-full max-w-sm py-4 bg-primary text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 hover:shadow-xl"
                     >
-                        <MessageCircle size={20} /> Order via WhatsApp
+                        Proceed to Checkout
                     </button>
-                    <p className="text-xs text-gray-500 max-w-sm text-center">
+                    <p className="text-xs text-stone-500 max-w-sm text-center">
                         *Final price may vary slightly based on exact weight at checkout.
                     </p>
                 </div>
